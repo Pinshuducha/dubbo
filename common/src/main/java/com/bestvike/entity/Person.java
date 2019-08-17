@@ -1,5 +1,7 @@
 package com.bestvike.entity;
 
+import com.bestvike.utils.ConverterJson;
+
 import java.io.Serializable;
 
 public class Person implements Serializable {
@@ -8,6 +10,15 @@ public class Person implements Serializable {
     private String name;
     private String mobileNum;
     private String address;
+
+    public Person() {
+    }
+
+    public Person(String name, String mobileNum, String address) {
+        this.name = name;
+        this.mobileNum = mobileNum;
+        this.address = address;
+    }
 
     public String getName() {
         return name;
@@ -35,10 +46,6 @@ public class Person implements Serializable {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", mobileNum='" + mobileNum + '\'' +
-                ", address='" + address + '\'' +
-                '}';
+        return ConverterJson.serialize(this);
     }
 }
