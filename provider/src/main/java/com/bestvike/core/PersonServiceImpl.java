@@ -1,4 +1,4 @@
-package com.provider.core;
+package com.bestvike.core;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.bestvike.PersonService;

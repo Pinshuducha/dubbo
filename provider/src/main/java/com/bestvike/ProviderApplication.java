@@ -1,4 +1,4 @@
-package com.provider;
+package com.bestvike;
 
 import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
 import org.springframework.boot.SpringApplication;
